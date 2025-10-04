@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: zephra-ml-api
+    env: python
+    buildCommand: "pip install -r requirements.txt && python src/train.py"
+    startCommand: "uvicorn api.app:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+      - key: ZEPHRA_API_URL
+        value: https://zephra.onrender.com/api/dashboard
