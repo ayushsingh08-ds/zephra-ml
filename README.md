@@ -1,14 +1,17 @@
-# Zephra ML - AQI Forecasting Service
+# 🌬️ Zephra ML - AQI Forecasting Service
 
-A machine learning service for forecasting Air Quality Index (AQI) values using gradient boosting regression.
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+A production-ready machine learning service for forecasting Air Quality Index (AQI) values using gradient boosting regression.
 
 ## 🚀 Features
 
-- Fetches real-time data from Zephra API
-- Trains a Gradient Boosting Regressor model
-- Provides single-hour and 24-hour AQI forecasts
-- FastAPI-based REST API
-- Docker containerization support
+- ✅ **Real-time Data**: Fetches live data from Zephra API
+- 🧠 **ML Model**: Gradient Boosting Regressor with robust error handling
+- 📊 **Forecasting**: Single-hour and 24-hour AQI predictions
+- 🌐 **REST API**: FastAPI with CORS support and health checks
+- 🐳 **Docker Ready**: Containerization for easy deployment
+- ☁️ **Render Deploy**: One-click deployment to Render platform
 
 ## 📁 Project Structure
 
